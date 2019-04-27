@@ -97,3 +97,4 @@ ES6 開始有了展開運算子，`call` 跟 `apply` 在使用時差異幾乎可
  - [MDN: Function​.prototype​.apply()](https://developer.mozilla.org/zh-TW/docs/Web/JavaScript/Reference/Global_Objects/Function/apply)
  - [MDN: Function​.prototype​.bind()](https://developer.mozilla.org/zh-TW/docs/Web/JavaScript/Reference/Global_Objects/Function/bind)
  - [MDN: Function​.prototype​.call()](https://developer.mozilla.org/zh-TW/docs/Web/JavaScript/Reference/Global_Objects/Function/call)
+ - [apply 与 call 性能分析](https://www.jianshu.com/p/f90a5965916b)
