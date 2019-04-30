@@ -1,11 +1,11 @@
 # 什麼捕獲冒泡，你是魚嗎？ 聊聊瀏覽器 DOM 的事件傳遞
 
-身為一個前端工程師，從以前到現在的工作經驗中，凡是需要與使用者互動的，或是需要由使用者觸發的功能，總是離不開畫面上的事件處理。
-這篇就要來聊聊瀏覽器中 DOM 的事件傳遞機制。
+身為一個前端工程師，在一直以來的工作經驗中，凡是需要與使用者互動，或是需要由使用者觸發的功能，總是離不開畫面上的事件處理。
+這篇就讓我們來聊聊瀏覽器的 DOM 事件傳遞機制。
 
 ## DOM 事件
 
-在瀏覽器的 Javascript 引擎解讀 HTML、SVG 時，會將內容分析成一個個的 [DOM (Document Object Model)](https://developer.mozilla.org/zh-TW/docs/Web/API/Document_Object_Model)，其之間的互動，是透過每一個 DOM 上面註冊的事件監聽器，去處發個別要處理的事情。
+在瀏覽器的 Javascript 引擎解讀 HTML、SVG 時，會將內容分析成一個個的 [DOM (Document Object Model)](https://developer.mozilla.org/zh-TW/docs/Web/API/Document_Object_Model)；當使用者與 DOM 產生互動，則是透過 DOM 上面註冊的事件監聽器，去觸發個別事件要處理的事情。
 
 例如常見的 `onClick`、`onTouchStart`，輸入欄位的 `onInput`、`onChange`、`onBlur` 等，都是常用到的事件類型，因為太常用~~加上本人也懶~~，這邊就不贅述了。
 
@@ -29,7 +29,7 @@ React 除了語法糖外，底層還將 DOM 事件再包過一層，並幫你全
 <button onClick={clickHandler}>click me!</button>
 ```
 
-當然，不管是什麼框架，底層都仍要透過 Javascript 進行操作：
+當然，不管是什麼框架，底層都等同於透過 Javascript 進行操作：
 
 ```javascript
 document.querySelector('#id').addEventListener('click', clickHandler)
@@ -78,7 +78,10 @@ function listClickHandler(e){
 function getNewElem(text) {
   const elem = document.createElement('li')
   elem.innerText = text
-  elem.addEventListener('click', () => alert(text)) // 這裡建立了新的匿名函式！
+  
+  // 這裡建立了新的匿名函式！
+  elem.addEventListener('click', () => alert(text))
+  
   return elem
 }
 ```
@@ -88,7 +91,7 @@ function getNewElem(text) {
 ```javascript
 function popHandler() {
   const elem = document.querySelectorAll('#list>li')[list.childNodes.length - 1]
-  elem.removeEventListener('click', alertText) // 移除事件監聽
+  elem.removeEventListener('click', eventHandler) // 移除事件監聽
   elem.remove()
 }
 
@@ -162,8 +165,8 @@ content.addEventListener('click', capturingHandler, true)
 // ">>> capturing"
 ```
 
-如果目標階段是 **完全依照註冊順序執行**，console 應該不會印出東西吧？
-但如果調換註冊的順序如下：
+如果目標階段是 完全依照註冊順序執行，console 應該不會印出東西吧？但卻印出了最後才註冊的捕獲階段 console，難道目標階段還是有參考捕獲 & 冒泡決定執行與否嗎？
+如果調換註冊的順序如下：
 
 ```javascript
 content.addEventListener('click', bubblingHandler, false)
@@ -183,11 +186,11 @@ content.addEventListener('click', () => {
 
 ![黑人問號](https://i.imgur.com/kTIcVI4.jpg)
 
-好吧我真的搞不懂...
+好吧我到現在還是搞不懂...
 
 ## 總結
 
-以上就是這次關於 DOM 事件傳遞的分享。如果對於內文有任何問題，或是有錯誤的地方，都歡迎您的回應。也非常歡迎您對這個讓我困惑許久的 Bug 提出您的觀點～
+以上就是這次關於 DOM 事件傳遞的分享。如果對於內文有任何問題，或是文中有錯誤的地方，都歡迎您一起討論。另外，也非常歡迎您對這個讓我困惑許久的 Bug 提出您的觀點～
 
 ## 參考資料
 
