@@ -14,6 +14,12 @@
   - 型別
     - 除了基本型別：undefined, null, boolean, number, string, symbol
     - 其他的都是 object
+      - function foo(){
+          console.log(foo.data)
+        }
+        foo.data = 'bar'
+        foo() // bar
+        
     - 特別的 function
       - name
       - 可執行
@@ -21,4 +27,12 @@
       
   - prototype
     - 原型鍊
-    - new 
+    - new
+
+## async await & Promise
+
+## 傳值傳址
+
+## 為什麼不能用 == 要用 
+
+## 錯誤處理
