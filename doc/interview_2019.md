@@ -176,7 +176,7 @@ Case Study 是個很有心的環節，對於未來可能的工作內容同時提
 
 加入後的工作，除了預習教案、批改作業、回答學生問題外，臥虎藏龍的助教團隊也組成了線上社群；在協助學生成長的同時，助教團隊們也在一起成長，這種隨時都有人陪著你進步的感覺真的很棒！雖然我每次回答學生問題時都想太久寫太多，總是要在「補充可能需要的技術細節」及「掌握核心觀念即可」之間字字斟酌，但這樣的過程也讓我得到許多成長的機會，以及自我實現的成就感；同樣的，未來也會再另外寫成心得，敬請期待囉～
 
-<iframe src="https://docs.google.com/presentation/d/e/2PACX-1vRWr-fHlHZWN0vjWdmn2SD1PSHRyUZ2YVoeVsfU8JDP96bs0vcsYZQS6qD4s4v0A9a9ZDXaEgevBW9W/embed?start=false&loop=false&delayms=3000" frameborder="0" width="480" height="299" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
+[![](https://i.imgur.com/sDWXnMX.jpg)](https://docs.google.com/presentation/d/e/2PACX-1vRWr-fHlHZWN0vjWdmn2SD1PSHRyUZ2YVoeVsfU8JDP96bs0vcsYZQS6qD4s4v0A9a9ZDXaEgevBW9W/pub?start=false&loop=false&delayms=3000)
 
 > 幾周前在 TA 線上社群分享的鐵人賽冷飯 XD
 
