@@ -1,5 +1,7 @@
 # 2019 前端工程師求職心得
 
+![](https://images.unsplash.com/photo-1508237866955-4439ca21b062?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80)
+
 由於諸多緣故，筆者這陣子在處理換工作的相關事宜，最後也很幸運能快速找到心儀的新工作；本篇將節錄這段時間的部分求職紀錄及求職相關的經驗分享 & 心得。
 
 ## 背景簡介
