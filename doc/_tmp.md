@@ -13,14 +13,7 @@
 - .catch()
 - axios 攔截器
 
-### Email Template Service
-- 前言
-- Email 排版的困境
-  - inline style
-  - table 排列
-- MJML
-- Express + Handlebars + MJML
-- 總結
+
 
 ### Accessibility
 - https://developers.google.com/web/fundamentals/accessibility?hl=zh_tw
@@ -45,3 +38,6 @@
 ### AC 教學雜談
 - 學生作業複製貼上現成的 code
 
+
+# Liker Coin
+https://button.like.co/gary_chu
